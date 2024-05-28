@@ -1,0 +1,72 @@
+{
+    "ChannelGroups": [
+        {
+            "channelGroupName": "group1"
+        },
+        {
+            "channelGroupName": "group2"
+        },
+        {
+            "channelGroupName": "group3"
+        },
+        {
+            "channelGroupName": "recordingGroup"
+        }
+    ],
+    "DSPs": [
+        {
+            "dspName": "echo",
+            "dspType": "ECHO",
+            "isBypassed": true,
+            "channelGroup": "recordingGroup"
+        },
+        {
+            "dspName": "flange",
+            "dspType": "FLANGE",
+            "isBypassed": true,
+            "channelGroup": "recordingGroup"
+        },
+        {
+            "dspName": "distortion",
+            "dspType": "DISTORTION",
+            "isBypassed": true,
+            "channelGroup": "recordingGroup"
+        },
+        {
+            "dspName": "chorus",
+            "dspType": "CHORUS",
+            "isBypassed": true,
+            "channelGroup": "recordingGroup"
+        },
+        {
+            "dspName": "tremolo",
+            "dspType": "TREMOLO",
+            "isBypassed": true,
+            "channelGroup": "recordingGroup"
+        },
+        {
+            "dspName": "lowpass",
+            "dspType": "LOWPASS",
+            "isBypassed": true,
+            "channelGroup": "group2"
+        },
+        {
+            "dspName": "highpass",
+            "dspType": "HIGHPASS",
+            "isBypassed": true,
+            "channelGroup": "group3"
+        },
+        {
+            "dspName": "reverb",
+            "dspType": "SFXREVERB",
+            "isBypassed": true,
+            "channelGroup": "recordingGroup"
+        },
+        {
+            "dspName": "oscillator",
+            "dspType": "OSCILLATOR",
+            "isBypassed": true,
+            "channelGroup": "group3"
+        }
+    ]
+}

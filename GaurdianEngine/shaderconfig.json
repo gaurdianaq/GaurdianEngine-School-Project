@@ -1,0 +1,14 @@
+{
+    "Shaders": [
+      {
+        "friendlyName": "firstvertexshader",
+        "filePath": "vertex01.glsl",
+        "shaderType": "Vertex_Shader"
+      },
+      {
+        "friendlyName": "firstfragmentshader",
+        "filePath": "fragment01.glsl",
+        "shaderType": "Fragment_Shader"
+      }
+    ]
+}

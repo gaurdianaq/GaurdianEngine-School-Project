@@ -1,0 +1,408 @@
+{
+    "sceneName": "defaultScene",
+    "backgroundColour": {
+        "r": 0.5289999842643738,
+        "g": 0.8080000281333923,
+        "b": 0.921999990940094
+    },
+    "Resources": [
+        {
+            "ResourceType": "Mesh",
+            "Resources": [
+                {
+                    "friendlyName": "Sphere",
+                    "filePath": "Sphere_320_faces_xyz_n.ply"
+                },
+                {
+                    "friendlyName": "Cube",
+                    "filePath": "cube.ply"
+                },
+                {
+                    "friendlyName": "terrain",
+                    "filePath": "unevenground.ply"
+                },
+                {
+                    "friendlyName": "terrain2",
+                    "filePath": "MeshLab_Fractal_Terrain_xyz_n_uv.ply"
+                },
+                {
+                    "friendlyName": "bunny",
+                    "filePath": "bun_res3_xyz_n_uv.ply"
+                }
+            ]
+        },
+        {
+            "ResourceType": "Texture",
+            "Resources": [
+                {
+                    "friendlyName": "temp",
+                    "filePath": "temp.jpg",
+                    "type": "Normal"
+                },
+                {
+                    "friendlyName": "skyBox",
+                    "filePath": "cubemap-ok.jpg",
+                    "type": "CubeMap"
+                }
+            ]
+        },
+        {
+            "ResourceType": "Audio",
+            "Resources": [
+                {
+                    "friendlyName": "radio1",
+                    "channelGroupName": "group1",
+                    "filePath": "http://144.217.253.136:8504",
+                    "type": "NetStream",
+                    "is3D": false,
+                    "loops": false
+                },
+                {
+                    "friendlyName": "radio2",
+                    "channelGroupName": "group1",
+                    "filePath": "http://uk5.internet-radio.com:8189",
+                    "type": "NetStream",
+                    "is3D": false,
+                    "loops": false
+                },
+                {
+                    "friendlyName": "radio3",
+                    "channelGroupName": "group1",
+                    "filePath": "http://us3.internet-radio.com:8371/live",
+                    "type": "NetStream",
+                    "is3D": false,
+                    "loops": false
+                },
+                {
+                    "friendlyName": "recording",
+                    "channelGroupName": "recordingGroup",
+                    "filePath": "recording.wav",
+                    "type": "Recording",
+                    "is3D": false,
+                    "loops": false
+                }
+            ]
+        }
+    ],
+    "Entities": [
+        {
+            "objectName": "mainCamera",
+            "isActive": true,
+            "Components": [
+                {
+                    "ComponentType": "Camera",
+                    "Camera": {
+                        "fov": 0.6,
+                        "aspect": 1.77778,
+                        "nearClip": 0.1,
+                        "farClip": 10000.0,
+                        "cameraEye": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "cameraAt": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        }
+                    }
+                },
+                {
+                    "ComponentType": "Transform",
+                    "Transform": {
+                        "position": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "rotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "light",
+            "isActive": true,
+            "Components": [
+                {
+                    "ComponentType": "Transform",
+                    "Transform": {
+                        "position": {
+                            "x": 0.0,
+                            "y": 512.0,
+                            "z": 0.0
+                        },
+                        "rotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        }
+                    }
+                },
+                {
+                    "ComponentType": "Light",
+                    "Light": {
+                        "diffuse": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0
+                        },
+                        "atten": {
+                            "constant": 1.0,
+                            "linear": 0.00003000000106112566,
+                            "quadratic": 9.999999974752428e-7,
+                            "cutoff": 0.0
+                        },
+                        "param1": {
+                            "lightType": 0.0,
+                            "innerAngle": 45.0,
+                            "outerAngle": 60.0
+                        },
+                        "param2": {
+                            "x": 1.0
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "terrain",
+            "isActive": true,
+            "Components": [
+                {
+                    "ComponentType": "Transform",
+                    "Transform": {
+                        "position": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "rotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        }
+                    }
+                },
+                {
+                    "ComponentType": "MeshComponent",
+                    "MeshComponent": {
+                        "meshName": "terrain2",
+                        "materialDiffuse": {
+                            "r": 0.699999988079071,
+                            "g": 0.699999988079071,
+                            "b": 0.699999988079071,
+                            "alpha": 1.0
+                        },
+                        "materialSpecular": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0,
+                            "a": 1.0
+                        },
+                        "useVertColour": false,
+                        "useLighting": true,
+                        "textures" : [
+                            {
+                                "texture": "temp",
+                                "texStrength": 1.0
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "sphere1",
+            "isActive": true,
+            "Components": [
+                {
+                    "ComponentType": "Transform",
+                    "Transform": {
+                        "position": {
+                            "x": 0.0,
+                            "y": 2.0,
+                            "z": -5.0
+                        },
+                        "rotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        }
+                    }
+                },
+                {
+                    "ComponentType": "DebugRender",
+                    "DebugRender": {
+                        "shape": "Cube",
+                        "size": {
+                            "x": 2.0,
+                            "y": 2.0,
+                            "z": 2.0
+                        },
+                        "offset": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "colour": {
+                            "r": 0.0,
+                            "g": 1.0,
+                            "b": 0.0,
+                            "a": 1.0
+                        }
+                    }
+                },
+                {
+                    "ComponentType": "MeshComponent",
+                    "MeshComponent": {
+                        "meshName": "bunny",
+                        "materialDiffuse": {
+                            "r": 0.699999988079071,
+                            "g": 0.699999988079071,
+                            "b": 0.699999988079071,
+                            "alpha": 1.0
+                        },
+                        "materialSpecular": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0,
+                            "a": 1.0
+                        },
+                        "useVertColour": false,
+                        "useLighting": true,
+                        "textures" : [
+                            {
+                                "texture": "temp",
+                                "texStrength": 1.0
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "sphere2",
+            "isActive": true,
+            "Components": [
+                {
+                    "ComponentType": "Transform",
+                    "Transform": {
+                        "position": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "rotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        }
+                    }
+                },
+                {
+                    "ComponentType": "MeshComponent",
+                    "MeshComponent": {
+                        "meshName": "Sphere",
+                        "materialDiffuse": {
+                            "r": 0.699999988079071,
+                            "g": 0.699999988079071,
+                            "b": 0.699999988079071,
+                            "alpha": 1.0
+                        },
+                        "materialSpecular": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0,
+                            "a": 1.0
+                        },
+                        "useVertColour": false,
+                        "useLighting": true,
+                        "textures" : [
+
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "objectName": "sphere3",
+            "isActive": true,
+            "Components": [
+                {
+                    "ComponentType": "Transform",
+                    "Transform": {
+                        "position": {
+                            "x": 0.0,
+                            "y": -10.0,
+                            "z": 0.0
+                        },
+                        "rotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0
+                        }
+                    }
+                },
+                {
+                    "ComponentType": "MeshComponent",
+                    "MeshComponent": {
+                        "meshName": "Sphere",
+                        "materialDiffuse": {
+                            "r": 0.699999988079071,
+                            "g": 0.699999988079071,
+                            "b": 0.699999988079071,
+                            "alpha": 1.0
+                        },
+                        "materialSpecular": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0,
+                            "a": 1.0
+                        },
+                        "useVertColour": false,
+                        "useLighting": true,
+                        "textures" : [
+
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

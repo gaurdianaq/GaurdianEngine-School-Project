@@ -1,0 +1,3 @@
+#ifndef _FOLLOW_OBJECT_COMMAND_HG
+#define _FOLLOW_OBJECT_COMMAND_HG
+#endif

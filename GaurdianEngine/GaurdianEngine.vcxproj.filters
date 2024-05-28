@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="InputManager">
+      <UniqueIdentifier>{14d57197-3294-4497-aee8-117a079f5474}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logger">
+      <UniqueIdentifier>{a411a77e-3ae2-4507-8d10-bbef7953d9fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{e0a89e88-f8e7-499f-9846-071a18a65c42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components">
+      <UniqueIdentifier>{de102dc2-63ba-42ce-a430-3371b7b10d60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ResourceManager">
+      <UniqueIdentifier>{dde7b08b-b619-4844-b7d6-ee5878a451d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ResourceManager\ShaderManager">
+      <UniqueIdentifier>{cb80bf5b-913e-467b-b9f5-64552447dc61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ResourceManager\MeshManager">
+      <UniqueIdentifier>{a1516825-0629-419b-aec3-9b35b55f8b5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{05f376ec-80e1-4153-9a62-16394fd0cc77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies%28NotMyCode%29">
+      <UniqueIdentifier>{55fa9f79-6ddd-4c00-b12b-aaa9ea79b378}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems">
+      <UniqueIdentifier>{1bf66437-cdde-453d-b304-da564e4df3f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems\RenderSystems">
+      <UniqueIdentifier>{e453957b-df15-4733-a503-adb9a7f2adb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems\InitSystems">
+      <UniqueIdentifier>{bc90718c-b1b4-4acc-80a0-17e5de03ada2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems\InputSystems">
+      <UniqueIdentifier>{f39ab8c5-d68d-4bf7-9140-970a4f1de921}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems\PhysicsSystems">
+      <UniqueIdentifier>{47da32fa-e5e3-4a80-9529-61599475267e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Serialization">
+      <UniqueIdentifier>{0f20eac4-507c-474d-9b9c-b70046013ab2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MessageTypes">
+      <UniqueIdentifier>{a8df364a-2850-4076-bda4-340b33ebde2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Builders">
+      <UniqueIdentifier>{775f0535-6166-4ec1-8041-2225c7a6159c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ResourceManager\AudioManager">
+      <UniqueIdentifier>{a2e074eb-6035-4cdd-9dbe-efe85736c0d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems\AudioSystems">
+      <UniqueIdentifier>{ccce121b-cde2-45da-84cf-5d9289c7bad8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems\BuilderSystems">
+      <UniqueIdentifier>{4ecdd958-0311-464f-8fe4-ee453b69839d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{52f62515-5ade-4170-90ee-95edd795f39b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ResourceManager\TextureManager">
+      <UniqueIdentifier>{247ac680-902e-43be-b3f7-1fd27731ee63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Commands">
+      <UniqueIdentifier>{d7a621b5-2d3b-44f8-8338-dadcdd569bb8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="glad.c">
+      <Filter>Dependencies%28NotMyCode%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Component.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Scene.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger\Logger.cpp">
+      <Filter>Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\Transform.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\MeshComponent.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager\Resource.cpp">
+      <Filter>ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Entity.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager\MeshManager\Mesh.cpp">
+      <Filter>ResourceManager\MeshManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager\MeshManager\MeshManager.cpp">
+      <Filter>ResourceManager\MeshManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager\ShaderManager\Shader.cpp">
+      <Filter>ResourceManager\ShaderManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager\ShaderManager\ShaderManager.cpp">
+      <Filter>ResourceManager\ShaderManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager\ShaderManager\ShaderProgram.cpp">
+      <Filter>ResourceManager\ShaderManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\CameraComponent.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\SceneManager.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\RenderSystems\MeshRenderSystem.cpp">
+      <Filter>Systems\RenderSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ComponentFactory.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager\ResourceFactory.cpp">
+      <Filter>ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\InputSystems\DebugInput.cpp">
+      <Filter>Systems\InputSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\Velocity.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\Acceleration.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\RigidBody.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\SphereCollider.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\PhysicsSystems\CollisionSystem.cpp">
+      <Filter>Systems\PhysicsSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\BoxCollider.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\Collider.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Serialization\Serializer.cpp">
+      <Filter>Serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\Light.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\RenderSystems\LightSystem.cpp">
+      <Filter>Systems\RenderSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\SystemManager.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Message.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\MessageMediator.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\MessageReceiver.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Builders\BallBuilder.cpp">
+      <Filter>Builders</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageTypes\BuilderMessages.cpp">
+      <Filter>MessageTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\PhysicsSystems\MotionSystem.cpp">
+      <Filter>Systems\PhysicsSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\PhysicsSystems\CollisionResponseSystem.cpp">
+      <Filter>Systems\PhysicsSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageTypes\CollisionMessage.cpp">
+      <Filter>MessageTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager\AudioManager\AudioManager.cpp">
+      <Filter>ResourceManager\AudioManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager\AudioManager\Audio.cpp">
+      <Filter>ResourceManager\AudioManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\AudioComponent.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager\AudioManager\Channel.cpp">
+      <Filter>ResourceManager\AudioManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\BuilderSystem.cpp">
+      <Filter>Systems\BuilderSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\AudioSystems\AudioSystem.cpp">
+      <Filter>Systems\AudioSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\PhysicsSystems\MotionMessageSystem.cpp">
+      <Filter>Systems\PhysicsSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\AudioSystems\AudioMessageSystem.cpp">
+      <Filter>Systems\AudioSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\MessageSystem.cpp">
+      <Filter>Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager\iResourceManager.cpp">
+      <Filter>ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageTypes\AudioMessages.cpp">
+      <Filter>MessageTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager\AudioManager\ChannelGroup.cpp">
+      <Filter>ResourceManager\AudioManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager\AudioManager\DSP.cpp">
+      <Filter>ResourceManager\AudioManager</Filter>
+    </ClCompile>
+    <ClCompile Include="maintest.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager\ResourceManager.cpp">
+      <Filter>ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\RenderSystems\CameraSystem.cpp">
+      <Filter>Systems\RenderSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\DebugRenderComponent.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\System.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\RenderSystems\DebugRenderSystem.cpp">
+      <Filter>Systems\RenderSystems</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager\TextureManager\Texture.cpp">
+      <Filter>ResourceManager\TextureManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager\TextureManager\TextureManager.cpp">
+      <Filter>ResourceManager\TextureManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\MoveToCommand.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\FollowObjectCommand.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\AnimationCurveCommand.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\CommandGroup.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\Component.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Scene.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger\Logger.h">
+      <Filter>Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Transform.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\MeshComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\SceneManager.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager\Resource.h">
+      <Filter>ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Entity.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager\MeshManager\Mesh.h">
+      <Filter>ResourceManager\MeshManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager\MeshManager\MeshManager.h">
+      <Filter>ResourceManager\MeshManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager\ShaderManager\Shader.h">
+      <Filter>ResourceManager\ShaderManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager\ShaderManager\ShaderManager.h">
+      <Filter>ResourceManager\ShaderManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager\ShaderManager\ShaderProgram.h">
+      <Filter>ResourceManager\ShaderManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Global.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\CameraComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\ResourceTypes.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\System.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\RenderSystems\MeshRenderSystem.h">
+      <Filter>Systems\RenderSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ComponentFactory.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager\ResourceFactory.h">
+      <Filter>ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\ComponentTypes.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\InputSystems\DebugInput.h">
+      <Filter>Systems\InputSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\SphereCollider.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\BoxCollider.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\RigidBody.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Collider.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Velocity.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Acceleration.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\PhysicsSystems\CollisionSystem.h">
+      <Filter>Systems\PhysicsSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\Serializer.h">
+      <Filter>Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization\ISerializeable.h">
+      <Filter>Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Light.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\RenderSystems\LightSystem.h">
+      <Filter>Systems\RenderSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\SystemManager.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Message.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\MessageMediator.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\MessageReceiver.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\iMessageSender.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Builders\BallBuilder.h">
+      <Filter>Builders</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageTypes\BuilderMessages.h">
+      <Filter>MessageTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\EntitySystem.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Builder.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\PhysicsSystems\MotionSystem.h">
+      <Filter>Systems\PhysicsSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\PhysicsSystems\CollisionResponseSystem.h">
+      <Filter>Systems\PhysicsSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageTypes\CollisionMessage.h">
+      <Filter>MessageTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager\AudioManager\AudioManager.h">
+      <Filter>ResourceManager\AudioManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager\AudioManager\Audio.h">
+      <Filter>ResourceManager\AudioManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager\AudioManager\Channel.h">
+      <Filter>ResourceManager\AudioManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\AudioComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\BuilderSystem.h">
+      <Filter>Systems\BuilderSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\AudioSystems\AudioSystem.h">
+      <Filter>Systems\AudioSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\MessageSystem.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\PhysicsSystems\MotionMessageSystem.h">
+      <Filter>Systems\PhysicsSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\AudioSystems\AudioMessageSystem.h">
+      <Filter>Systems\AudioSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager\iResourceManager.h">
+      <Filter>ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageTypes\AudioMessages.h">
+      <Filter>MessageTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager\AudioManager\ChannelGroup.h">
+      <Filter>ResourceManager\AudioManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager\AudioManager\DSP.h">
+      <Filter>ResourceManager\AudioManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\SystemTypes.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager\AudioManager\AudioType.h">
+      <Filter>ResourceManager\AudioManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager\ResourceManager.h">
+      <Filter>ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\RenderSystems\CameraSystem.h">
+      <Filter>Systems\RenderSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\DebugRenderComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\RenderSystems\DebugRenderSystem.h">
+      <Filter>Systems\RenderSystems</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager\TextureManager\Texture.h">
+      <Filter>ResourceManager\TextureManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager\TextureManager\TextureManager.h">
+      <Filter>ResourceManager\TextureManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\MoveToCommand.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\FollowObjectCommand.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\AnimationCurveCommand.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\CommandGroup.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Command.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
